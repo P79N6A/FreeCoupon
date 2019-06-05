@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_300"
+        android:background="@drawable/background_homepage" />
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15">
+        <!--滑动banner-->
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner"
+            style="@style/BannerDefaultStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            app:banner_transitionEffect="depth" />
+        <!--分类-->
+        <LinearLayout
+            android:id="@+id/ll_classify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/banner"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/background_white_6dp"
+            android:padding="@dimen/dp_15">
+            <!--第一行-->
+            <LinearLayout
+                android:id="@+id/ll_classify_firstLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <!--分类-->
+                <TextView
+                    android:id="@+id/tv_taobao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableTop="@drawable/icon_taobao"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_15"
+                    android:text="@string/string_taoabo_coupon"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_jingdong"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableTop="@drawable/icon_jingdong"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_15"
+                    android:text="@string/string_jingdong_coupon"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_xianxia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableTop="@drawable/icon_xianxia"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_15"
+                    android:text="@string/string_xianxia_coupon"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_mianfeiling"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableTop="@drawable/icon_mianfei"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_15"
+                    android:text="@string/string_mianfeiling"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--今日推荐-->
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_recommend"
+            style="@style/BannerDefaultStyle"
+            android:layout_below="@+id/ll_classify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            app:banner_transitionEffect="depth" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/banner_recommend"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_15"
+                android:text="@string/string_hot_recommend"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:text="@string/string_more"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

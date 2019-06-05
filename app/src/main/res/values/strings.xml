@@ -1,0 +1,150 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="str">冕费圈</string>
+    <string name="string_loading">正在加载…</string>
+    <string name="http_url">http://www.crownfee.com/api/Index/index/</string>
+    <string name="string_ddd">•••</string>
+
+
+    <string name="string_homepage">首页</string>
+    <string name="string_coupon">领卡券</string>
+    <string name="string_search">搜索</string>
+    <string name="string_entity">领试用</string>
+    <string name="string_mine">我的</string>
+
+    <string name="string_login">登录</string>
+    <string name="string_register">注册</string>
+    <string name="string_str1">登录时请注意账号的保密</string>
+    <string name="string_go_register">用户注册</string>
+    <string name="string_forget_password">忘记密码</string>
+    <string name="string_login_password">登录密码</string>
+    <string name="string_phone">手机号</string>
+    <string name="string_conform_password">确认密码</string>
+    <string name="string_protocol">&#160;用户协议</string>
+    <string name="string_str2">注册即表示您已阅读并同意</string>
+    <string name="string_YZM">验证码</string>
+    <string name="string_getYZM">获取验证码</string>
+    <string name="string_account_auth">账户认证</string>
+    <string name="string_str3">认证账号安全方便您修改密码</string>
+    <string name="string_next">下一步</string>
+    <string name="string_new_password">新密码</string>
+    <string name="string_str4">输入新密码时不能和旧密码一样</string>
+    <string name="string_complete">完成</string>
+    <string name="string_person_msg"><![CDATA[个人信息>>]]></string>
+    <string name="string_myIntegral">我的积分</string>
+    <string name="string_myCoupon">我的卡券</string>
+    <string name="string_moren">--</string>
+    <string name="string_call_us">联系我们</string>
+    <string name="string_feedback">意见反馈</string>
+    <string name="string_about">关&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;于</string>
+    <string name="string_set">设&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;置</string>
+    <string name="string_cutLine">--------------------------------</string>
+    <string name="string_yuanjia">【在售价】</string>
+    <string name="string_xianjia">【券后价】</string>
+    <string name="string_taoWord_desc">复制这条信息，{￥复制后自动生成淘口令￥}，到【手机淘宝】即可查看</string>
+    <string name="string_copyTaoWord">复制淘口令</string>
+    <string name="string_explain">冕费圈仅提供技术支持，请自行确保分享内容真实合法(如不使用淘宝内部优惠券、好评返现等虚假描述)。</string>
+    <string name="string_taoabo_coupon">惠淘宝</string>
+    <string name="string_jingdong_coupon">惠京东</string>
+    <string name="string_xianxia_coupon">找免费</string>
+    <string name="string_mianfeiling">领试用</string>
+
+    <!--用户协议-->
+    <string name="benwu_protocol_title1">一、说明</string>
+    <string name="benwu_protocol_title2">二、账号注册</string>
+    <string name="benwu_protocol_title3">三、用户权利与义务</string>
+    <string name="benwu_protocol_title4">四、“冕费圈”责任和义务</string>
+    <string name="benwu_protocol_title5">五、隐私保护</string>
+    <string name="benwu_protocol_title6">六、不可抗力</string>
+    <string name="benwu_protocol_title7">七、争议解决方式</string>
+    <string name="benwu_protocol_text1">
+        1、本用户协议双方为重庆欧睿淏电子商务有限责任公司冕费圈APP（下称“冕费圈”）与“冕费圈”网络用户，本用户协议具有合同效力。\n2、本用户协议内容包括协议正文及所有“冕费圈”发布的各类规则。所有规则为协议不可分割的一部分，与协议正文具有同等法律效力。\n3、在本用户协议中没有链接文字所指示的文件不属于本用户协议的组成部分，而是其它内容的协议或有关参考数据，与本协议没有法律上的直接关系。\n4、用户在使用“冕费圈”提供的各项服务的同时，承诺接受并遵守各项相关规则的规定。“冕费圈”有权根据需要不时地制定、修改本协议或各类规则，如本协议有任何变更，“冕费圈”将在网站上刊载公告，通知予用户。如用户不同意相关变更，必须停止使用“服务”。经修订的协议一经在“冕费圈”公布后，立即自动生效。各类规则会在发布后生效，亦成为本协议的一部分。登录或继续使用“服务”将表示用户接受经修订的协议。除另行明确声明外，任何使“服务”范围扩大或功能增强的新内容均受本协议约束。\n5、用户确认本用户协议后，本用户协议即在用户和“冕费圈”之间产生法律效力。请用户务必在注册之前认真阅读全部用户协议内容，如有任何疑问，可向“冕费圈”客服咨询。\n6、无论用户事实上是否在注册之前认真阅读了本用户协议，只要用户点击协议正本下方的“确认”按钮并按照“冕费圈”注册程序成功注册为用户，用户的行为仍然表示其同意并签署了本用户协议。\n7、本协议不涉及用户与“冕费圈”其它用户之间因网络教育而产生的法律关系及法律纠纷。
+    </string>
+    <string name="benwu_protocol_text2">
+        1、用户在使用“冕费圈”平台前需注册一个账号。该账号应当用手机号绑定注册，请用户使用未绑定“冕费圈”平台的手机号或未被“冕费圈”平台封禁的手机号，“冕费圈”可以根据用户需要和产品需求对注册和绑定的方式进变更。\n2、在用户注册和使用平台时，“冕费圈”需要收集识别用户的身份信息以便“冕费圈”能随时联系用户，或为用户提供更好的使用体验。“冕费圈”收集信息包括但不限于真实姓名、手机号、身份证号、地址、学校名、年级、班级、年龄、身份（老师或学生），“冕费圈”同意对这些信息的使用将受限于第三条用户个人隐私信息保护的约束。
+    </string>
+    <string name="benwu_protocol_text3">
+        1、用户有权根据需要更改密码和交易密码。用户应对以该用户名进行的所有活动和事件负全部责任。\n2、用户有义务确保向“冕费圈”提供任何资料、注册信息真实准确，同时，用户有义务在相关资料实际变更时及时更新有关注册资料。\n3、用户不得以任何形式擅自转让或授权他人使用自己在“冕费圈”中的账号。\n4、用户同意接收来自“冕费圈”的任何信息，包括但不限于活动信息、通知信息、交易信息等。\n5、用户承诺自己在使用“冕费圈”APP时所有的行为遵守国家法律、法规和“冕费圈”APP相关规定。如有违反，用户必须承担所有相应的法律责任。\n6、用户不得随意复制、下载未经“冕费圈”网站允许复制、下载的任何内容。
+    </string>
+    <string name="benwu_protocol_text4">
+        1、“冕费圈”有义务在现有技术上维护整个信息平台的正常运行，并努力提升和改进技术，使用户在网站上有更好的操作体验；\n2、对用户在注册使用“冕费圈”APP平台中所遇到的与交易或注册有关的问题及反映的情况，“冕费圈”应及时作出回复；\n3、对于用户在“冕费圈”教育平台上的不当行为或其它任何“冕费圈”认为应当终止服务的情况，“冕费圈”有权随时作出删除相关信息、终止服务提供等处理，而无须征得用户的同意；“冕费圈”应本着诚实信用的原则向用户提供在线信息服务，不得随意中断或停止提供该项服务。但由于不可抗力或者其它非人为因素造成的服务的中断或停止，“冕费圈”不承担任何相应的责任。\n4、“冕费圈”网站内以任何形式表现的作品（包括但不限于文字、软件、声音、图片、视频、表格、电子邮件等）的著作权，由作品的著作权人和冕费圈共同享有，用户未经许可，不得擅自对“冕费圈”的任何作品进行任何形式的翻录、复制或从事其他任何违反著作权法等相关法律、法规的活动。对侵犯“冕费圈”知识产权的个人和组织，重庆欧睿淏电子商务有限责任公司和作品的著作权人将依法追究其民事或刑事责任。\n5、“冕费圈”享有对用户网上活动的监督和指导权，对凡是从事网上非法活动的用户，有权终止所有服务。\n6、许可使用权。“冕费圈”对用户在网上发表的供学习交流的作品，享有独家的出版、发行和复制的权利。
+    </string>
+    <string name="benwu_protocol_text5">
+        “冕费圈”有权保护用户隐私，保证不对外公开向第三方提供用户的注册资料及用户的所有信息，但不包括：\n1、已获得用户的书面授权书；\n2、法律、法规及相关政府单位的要求；\n3、为维护社会公众的利益和“冕费圈”的合法权益；
+    </string>
+    <string name="benwu_protocol_text6">
+        因不可抗力或者其他意外事件，使得本协议的履行不可能、不必要或者无意义的，双方均不承担责任。本合同所称之不可抗力意指不能预见、不能避免并不能克服的客观情况，包括但不限于战争、台风、水灾、火灾、雷击或地震、罢工、暴动、法定疾病、黑客攻击、网络病毒、电信部门技术管制、政府行为或任何其它自然或人 为造成的灾难等客观情况。
+    </string>
+    <string name="benwu_protocol_text7">
+        1、本协议及其修订本的有效性、履行和与本协议及其修订本效力有关的所有事宜，将受中华人民共和国法律管辖，任何争议仅适用中华人民共和国法律。\n2、因使用本网站服务所引起与本网站的任何争议，均应提交仲裁委员会按照该会届时有效的仲裁规则进行仲裁。相关争议应单独仲裁，不得与任何其它方的争议在任何仲裁中合并处理，该仲裁裁决是终局，对各方均有约束力。如果所涉及的争议不适于仲裁解决，用户同意一切争议由人民法院管辖。
+    </string>
+    <string name="string_hot_recommend">周边免费</string>
+    <string name="string_lingquanzhongxin">领券中心</string>
+    <string name="string_person_center">个人中心</string>
+    <string name="string_avatar">头像</string>
+    <string name="string_mobile_number">账号</string>
+    <string name="string_nickname">用户名</string>
+    <string name="string_realName">真实姓名</string>
+    <string name="string_sex">性别</string>
+    <string name="string_free">免费</string>
+    <string name="string_shengyu_num">剩余数量：</string>
+    <string name="string_linkMan">收货联系人</string>
+    <string name="string_link_phone">联系电话</string>
+    <string name="string_address">省、市、区</string>
+    <string name="string_address_rule">详细地址请不要少于五个字</string>
+    <string name="string_besure">确定</string>
+    <string name="string_search_content">搜索内容</string>
+    <string name="string_hot_search">热门搜索</string>
+    <string name="string_search_history">搜索历史</string>
+    <string name="string_clear_searchHistory">清空搜索历史</string>
+    <string name="string_contentDescription">表示可点击状态</string>
+    <string name="string_logout">退出登录</string>
+    <string name="string_save">保存</string>
+    <string name="string_avatar_preview">头像预览</string>
+    <string name="string_share">分享有礼</string>
+    <string name="string_feedBack_hint">请输入您的意见反馈</string>
+    <string name="string_close">返回冕费圈</string>
+    <string name="string_search_hint">粘贴宝贝标题/输入关键字搜索</string>
+    <string name="string_exchange_record">兑换记录</string>
+    <string name="string_choujiang">积分抽奖</string>
+    <string name="string_auction">商品竞拍</string>
+    <string name="string_empty">当前暂无优惠券</string>
+    <string name="string_empty_record">当前暂无获奖记录</string>
+    <string name="string_receiverAddress">收货地址</string>
+    <string name="string_company">重庆欧睿淏电子商务有限责任公司</string>
+    <string name="string_str">提交订单前，请确认收货地址</string>
+    <string name="string_total">合计：</string>
+    <string name="string_str5">共1件</string>
+    <string name="string_subtotal">小计：</string>
+    <string name="string_str6">快递 免邮</string>
+    <string name="string_str7">快速配送</string>
+    <string name="string_str8">配送方式</string>
+    <string name="string_str9">此商品性质不支持退换货</string>
+    <string name="string_conform_order">提交订单</string>
+    <string name="string_serve">服务</string>
+    <string name="string_sTime">领取开始时间：</string>
+    <string name="string_eTime">领取结束时间：</string>
+    <string name="string_shop_address">商家地址：</string>
+    <string name="string_link_shop">联系商家：</string>
+    <string name="string_copy">复制地址</string>
+    <string name="string_get_coupon">立即领券</string>
+    <string name="string_use">立即使用</string>
+    <string name="string_validity">有效期至：</string>
+    <string name="string_Sequence_coding">券码：</string>
+    <string name="string_ticket_rule">使用规则</string>
+    <string name="string_ticket_rule_desc">1)在门店下单时可抵扣券面值，每个订单限使用一张；\n2)用户须在有效期内到店完成服务，过期未到店完成服务将自动取消订单；\n3)本券不可兑换现金，不找零，不与其他活动共享。</string>
+    <string name="string_copy_address">复制地址</string>
+    <string name="string_integral">积分</string>
+    <string name="string_change">立即兑换</string>
+    <string name="string_str10">扫描下方二维码可免费领取上方礼品</string>
+    <string name="string_exchange">赚取积分</string>
+    <string name="string_get">立即领取</string>
+    <string name="string_more">更多…</string>
+    <string name="string_will_get">—— 下期免费试用品 ——</string>
+    <string name="string_about_detail">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;重庆欧睿淏电子商务有限责任公司于2016年4月成立，注册资金500万元。公司坐落于重庆市九龙坡区。在电子商务，新零售大势下实体店铺促销信息传递困难，为解决互联网时代的线上线下店铺的促销信息传递难的问题，“冕费圈”APP应运而生。致力于在品牌、商户、消费者之间构筑一个互利共赢的生态体系，服务辐射全国百万商家及数亿消费者。公司本着健康，创新、利他、共赢的理念开始了探索发展的新时期。</string>
+    <string name="string_rule">1、使用附近优惠券，可获得相应积分奖励；\n2、赚取积分中输入淘宝、京东的订单号可获取积分奖励；\n3、每天分享二维码下载冕费圈可获取积分奖励；</string>
+    <string name="string_get_way">1、领免费券到店消费后，可获得积分奖励。 \n2、在个人中心-设置-分享有礼，截图分享免费券APP可获得相应积分奖励。</string>
+    <string name="string_center">欢迎来到冕费圈\n关于冕费圈的使用问题\n举报不良信息中奖查询\n试用领取查询、积分查询兑换查询\n扫描下方二维码\n关注微信公众号</string>
+</resources>

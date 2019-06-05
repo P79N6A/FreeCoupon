@@ -1,0 +1,141 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.2'
+    defaultConfig {
+        applicationId "com.ks.freecoupon"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        //添加了javaCompileOptions
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    //签名参数配置
+    signingConfigs {
+        release {
+            storeFile file('D:\\zhxk_apk_key\\mianfeiquan_sign.jks') //签名文件
+            storePassword 'qwedsa159' //密码
+            keyAlias 'mianfeiquan_sign' //别名
+            keyPassword 'qwedsa159' //别名密码
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+        }
+        debug {
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+            keyAlias 'mianfeiquan_sign'
+            keyPassword 'qwedsa159'
+            storeFile file('D:/zhxk_apk_key/mianfeiquan_sign.jks')
+            storePassword 'qwedsa159'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+            //使用Release版签名
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //为debug版本的包名添加.debug后缀
+//            applicationIdSuffix ".debug"
+            //debug模式的app名称
+            resValue 'string', 'app_name', '冕费圈(测试版)'
+        }
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            //使用Release版签名
+            signingConfig signingConfigs.release
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue 'string', 'app_name', '冕费圈'
+        }
+    }
+    buildTypes {
+        release {
+            //暂时不适用混淆
+            minifyEnabled false
+            shrinkResources false
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:support-v4:27.0.1'
+            force 'com.android.support:design:27.0.1'
+            force 'com.android.support:appcompat-v7:27.0.1'
+            force 'com.android.support:support-annotations:27.1.1'
+        }
+    }
+}
+repositories {
+
+    maven {
+        url "http://mvnrepo.alibaba-inc.com/mvn/repository"
+    }
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/BASE64Encoder.jar')
+    //基础实用工具
+    implementation 'com.github.zhxk:ProjectBasicTools:1.1.1'
+    //butterknife映射工具
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    implementation 'com.jakewharton:butterknife-compiler:8.5.1'
+    //滑动TabLayout
+    implementation 'com.android.support:design:26.1.0'
+    //轮播图控件
+    implementation 'com.bigkoo:ConvenientBanner:2.1.4'
+    implementation 'cn.bingoogolapple:bga-banner:2.2.5@aar'
+    //网络图片加载框架，需要网络请求权限
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //地址选择器
+    implementation 'com.contrarywind:Android-PickerView:4.1.7'
+    //GSON
+    implementation 'com.google.code.gson:gson:2.8.0'
+    //图片选择器
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.1'
+    //二维码生成器
+    implementation 'com.king.zxing:zxing-lite:1.1.1'
+
+    //权限管理
+    implementation 'com.yanzhenjie:permission:2.0.0-rc4'
+    //EventBus组件通信
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    //okhttp包
+    implementation 'com.zhy:okhttputils:2.6.2'
+    //RecycleView添加HeaderView和FooterView
+    implementation 'com.zhy:base-rvadapter:3.0.3'
+    implementation files('libs/BaiduLBS_Android.jar')
+}

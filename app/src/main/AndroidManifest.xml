@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ks.freecoupon">
+
+    <!-- 网络请求权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- ACCESS_FINE_LOCATION：允许APP访问精确地理位置。 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- ACCESS_COARSE_LOCATION：允许APP访问大概地理位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 在SD卡中创建与删除文件权限 -->
+    <uses-permission
+        android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 写文件权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 适配全面屏手机 -->
+    <meta-data
+        android:name="android.max_aspect"
+        android:value="ratio_float" />
+
+    <!-- <uses-sdk tools:overrideLibrary="com.ks.basictools"/> -->
+    <application
+        android:name=".Application"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".module.view.WelcomeActivity"
+            android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            tools:targetApi="n">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.view.MainActivity"
+            android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            tools:targetApi="n" />
+        <activity
+            android:name=".module.view.pc.activity.DiscountCouponActivity"
+            android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            tools:targetApi="n" />
+        <activity
+            android:name=".module.view.account.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            tools:targetApi="n" />
+        <activity
+            android:name=".module.view.account.activity.RegisterActivity"
+            android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            tools:targetApi="n" />
+        <activity
+            android:name=".module.view.account.activity.AccountAuthActivity"
+            android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            tools:targetApi="n" />
+        <activity
+            android:name=".module.view.account.activity.ResetPasswordActivity"
+            android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            tools:targetApi="n" />
+        <activity
+            android:name=".module.view.coupon.activity.CopyTaoWordActivity"
+            android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            tools:targetApi="n" />
+        <activity
+            android:name=".module.view.account.activity.ProtocolActivity"
+            android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            tools:targetApi="n" />
+        <activity
+            android:name=".module.view.pc.activity.PersonInfoActivity"
+            android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            tools:targetApi="n" />
+
+        <!-- 适配全面屏 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity
+            android:name=".module.view.entity.activity.AddressActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.UpdatePersonInfoActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.AvatarActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.ShareActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.AboutActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.FeedBackActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.LinkUsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.coupon.activity.WebViewActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.search.activity.SearchResultActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.ScoreShopActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.ChouJiangActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.ConformOrderActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.coupon.activity.GetNearCouponActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.ShowCouponCodeActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.ScoreGoodsDetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.ScoreRecordActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.EarnPointsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.view.pc.activity.ChouJiangRecordActivity"
+            android:launchMode="singleTop" />
+
+        <!-- 解决7.0照相机崩溃问题 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

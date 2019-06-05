@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_5"
+    android:layout_marginTop="@dimen/dp_5"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite" >
+        <!--商品图片-->
+        <ImageView
+            android:id="@+id/goods_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+        <!--商品描述-->
+        <TextView
+            android:id="@+id/goods_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_image"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_marginStart="@dimen/dp_5"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/dp_5"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/sp_14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_desc"
+            android:padding="@dimen/dp_5"
+            android:orientation="horizontal">
+            <!--积分价值-->
+            <TextView
+                android:id="@+id/tv_integral_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/sp_20" />
+
+            <!--字符串—积分-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_5"
+                android:text="@string/string_integral"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

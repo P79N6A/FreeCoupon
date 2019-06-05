@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_choujiang" />
+
+    <!--顶部Title-->
+    <RelativeLayout
+        android:id="@+id/rl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/dp_8"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_choujiang"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_5"
+            android:text="记录"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_draw"
+        android:layout_width="@dimen/dp_290"
+        android:layout_height="@dimen/dp_290"
+        android:layout_below="@+id/rl_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:visibility="visible">
+
+        <com.ks.freecoupon.override.PieView
+            android:id="@+id/pv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="30dp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/start" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_draw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="游戏规则：" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、活动期间，用户可使用10积分参与积分大转盘一次；" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2、如抽取的奖品为虚拟物品，请联系我们微信公众号：“免费圈为您服务”" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3、如抽取的奖品为实际物品，请完善收货地址，否则将不予发货；" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4、如有疑问请联系我们微信公众号：“免费圈为您服务”" />
+
+    </LinearLayout>
+</RelativeLayout>

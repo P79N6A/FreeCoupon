@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".module.view.coupon.activity.GetNearCouponActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+            <!--滑动banner-->
+            <cn.bingoogolapple.bgabanner.BGABanner
+                android:id="@+id/banner"
+                style="@style/BannerDefaultStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                app:banner_transitionEffect="depth" />
+            <!--标题-->
+            <TextView
+                android:id="@+id/tv_coupon_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_coupon_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/sp_21" />
+
+                <TextView
+                    android:id="@+id/tv_yuanPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+            <!--领取开始时间-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_sTime"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/sp_14" />
+                <!--开始领取时间-->
+                <TextView
+                    android:id="@+id/tv_stime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+            <!--领取结束时间-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_eTime"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/sp_14" />
+                <!--终止领取时间-->
+                <TextView
+                    android:id="@+id/tv_etime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/string_shop_address"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_16" />
+            <!--详细地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/icon_address_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:text="南岸区谭昌路66号附7号3楼-10-14号（工商英航斜对面5号电梯上3楼、长嘉汇5L网老街方向）" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+                <!--联系商家：-->
+                <TextView
+                    android:id="@+id/tv_link_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_link_shop"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_16" />
+                <!--电话-->
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/tv_link_shop"
+                    android:textColor="@color/colorPrimary" />
+                <!--拨号-->
+                <TextView
+                    android:id="@+id/tv_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_3"
+                    android:paddingBottom="@dimen/dp_3"
+                    android:text="拨号"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:textColor="@drawable/selector_button_text_color"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--底部按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <!--复制地址-->
+        <TextView
+            android:id="@+id/tv_copy_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@drawable/selector_button"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/string_copy"
+            android:textColor="@drawable/selector_button_text_color"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!--领优惠券-->
+        <TextView
+            android:id="@+id/tv_get_coupon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@drawable/background_button_20dp"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/string_get_coupon"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+</RelativeLayout>

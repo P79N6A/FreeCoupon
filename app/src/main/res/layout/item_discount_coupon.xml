@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingBottom="@dimen/dp_5"
+    android:paddingEnd="@dimen/dp_10"
+    android:paddingStart="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_5">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_96">
+
+        <RelativeLayout
+            android:id="@+id/rl_image"
+            android:layout_width="@dimen/dp_96"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="@dimen/dp_90"
+                android:layout_height="@dimen/dp_90"
+                android:layout_margin="@dimen/dp_6" />
+
+            <!--优惠券额度-->
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/background_coupon"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_toEndOf="@+id/rl_image">
+            <!--优惠券名称-->
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/dp_3"
+                android:maxLines="2"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_18" />
+
+            <LinearLayout
+                android:id="@+id/ll_eTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_str"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_validity"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/sp_13" />
+                <!--有效期-->
+                <TextView
+                    android:id="@+id/tv_eTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+            <!--描述-->
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_eTime"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/tv_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/selector_button"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingEnd="@dimen/dp_15"
+                android:paddingStart="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_5"
+                android:text="@string/string_use"
+                android:textColor="@drawable/selector_button_text_color"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

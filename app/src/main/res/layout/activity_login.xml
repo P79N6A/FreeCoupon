@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp_25"
+    android:paddingRight="@dimen/dp_25"
+    android:background="@color/colorWhite"
+    tools:context="com.ks.freecoupon.module.view.account.activity.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/tv_login_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/string_login"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_27" />
+
+        <TextView
+            android:id="@+id/tv_login_str2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login_str"
+            android:layout_marginTop="@dimen/dp_17"
+            android:text="@string/string_str1"
+            android:textColor="#969696"
+            android:textSize="@dimen/sp_11" />
+
+        <!--手机号-->
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_login_str2"
+            android:layout_marginTop="@dimen/dp_52"
+            android:background="@drawable/edittext_style"
+            android:hint="@string/string_phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10"
+            android:textColorHint="#4d000000"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="@dimen/sp_14"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <!--密码-->
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_below="@+id/login_username"
+            android:layout_marginTop="@dimen/dp_14"
+            android:background="@drawable/edittext_style"
+            android:hint="@string/string_login_password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10"
+            android:textColorHint="#4d000000"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="@dimen/sp_14"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <!--登录按钮-->
+        <Button
+            android:id="@+id/btn_login"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/login_password"
+            android:layout_marginTop="@dimen/dp_27"
+            android:background="@drawable/background_button_6dp"
+            android:text="@string/string_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <!--忘记密码-->
+        <TextView
+            android:id="@+id/login_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btn_login"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/string_forget_password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <!--用户注册-->
+        <TextView
+            android:id="@+id/login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btn_login"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/string_go_register"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+</RelativeLayout>

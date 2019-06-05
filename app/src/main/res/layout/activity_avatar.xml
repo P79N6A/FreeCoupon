@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".module.view.pc.activity.AvatarActivity">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_50"
+        android:contentDescription="@string/string_avatar_preview" />
+
+    <Button
+        android:id="@+id/btn_save"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/background_button_6dp"
+        android:text="@string/string_save"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_20"
+        android:visibility="gone"/>
+
+</RelativeLayout>

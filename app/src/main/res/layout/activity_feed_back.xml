@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/dp_15"
+    tools:context=".module.view.pc.activity.FeedBackActivity">
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="@string/string_feedBack_hint"
+        android:textColorHint="@color/colorGray"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

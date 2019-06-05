@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".module.view.pc.activity.LinkUsActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_linkus" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_25"
+        android:text="—联系我们—"
+        android:textColor="#060602"
+        android:textSize="@dimen/sp_25"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_50"
+        android:gravity="center_horizontal"
+        android:lineSpacingMultiplier="1.3"
+        android:text="@string/string_center"
+        android:textColor="#131102"
+        android:textSize="@dimen/sp_15" />
+
+    <ImageView
+        android:id="@+id/ivErweima"
+        android:layout_width="@dimen/dp_175"
+        android:layout_height="@dimen/dp_175"
+        android:layout_below="@+id/tvCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_65"
+        android:src="@drawable/icon_erweima" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivErweima"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="冕费圈为您服务"
+        android:textColor="#050501"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold" />
+</RelativeLayout>
